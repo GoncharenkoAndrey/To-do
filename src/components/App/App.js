@@ -32,7 +32,7 @@ export default class App extends Component {
 	}
 	addItem(text) {
 		this.setState((state) => {
-			const id = state.todoData.length;
+			const id = state.todoData.length + 1;
 			const newItem = this.createItem(id, text);
 			const newData = [
 				...state.todoData,
